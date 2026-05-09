@@ -88,18 +88,7 @@ button:hover{
 
             <input type="password" id="password" placeholder="Enter Password">
 
-            <input type="password" id="confirm_password" placeholder=" confirm password">
-
-           
-            <input type="tel" id="mobile_number" placeholder="Enter Mobile_number">
-
-            <input type="number" id="age" placeholder="Enter your age">
-
-            <button type="submit">Register</button> 
-            
-            
-
-            <button type="button" onclick="window.location.href='users.html'">View Registered Users</button>
+            <button type="submit">Register</button>
 
         </form>
 

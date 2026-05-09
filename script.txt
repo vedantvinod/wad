@@ -4,29 +4,19 @@ document.getElementById("registerForm").addEventListener("submit", function(e){
 
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
-    let password= document.getElementById("password").value;
-    let age = document.getElementById("age").value;
-    let mobile_number = document.getElementById("mobile_number").value;
-    let confirm_password=document.getElementById("confirm_password").value;
+    let password = document.getElementById("password").value;
 
     // Validation
-    if(name == "" || email == "" || password == "" || age=="" || mobile_number==""){
+    if(name == "" || email == "" || password == ""){
         alert("Please fill all fields");
         return;
     }
-    if(confirm_password!=password)
-        {
-            alert("incorrect password");
-            return;
-        }
 
     // User object
     let user = {
         name: name,
         email: email,
-        password: password,
-        age: age,
-        mobile_number:mobile_number
+        password: password
     };
 
     // Get old users
@@ -56,14 +46,12 @@ document.getElementById("registerForm").addEventListener("submit", function(e){
             document.getElementById("registerForm").reset();
  
             // Redirect after 2 sec
-            // setTimeout(() => {
-            //     window.location.href = "users.html";
-            // }, 10000);
+            setTimeout(() => {
+                window.location.href = "users.html";
+            }, 10000);
         }
     };
 
     xhr.send(JSON.stringify(user));
-
-    
 
 });

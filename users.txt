@@ -53,8 +53,6 @@
                 <th>Name</th>
                 <th>Email</th>
                 <th>Password</th>
-                <th>age</th>
-                <th>mobile_number</th>
                 <th>Action</th>
             </tr>
         </thead>
@@ -82,8 +80,6 @@
                         <td>${user.name}</td>
                         <td>${user.email}</td>
                         <td>${user.password}</td>
-                          <td>${user.age}</td>
-                            <td>${user.mobile_number}</td>
 
                         <td>
                             <button class="deleteBtn"
@@ -107,10 +103,6 @@
 
             displayUsers();
         }
-
-        
-
-
 
     </script>
 
